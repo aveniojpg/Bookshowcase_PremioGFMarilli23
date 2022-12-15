@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.upperbar{
+    height: 15vh;
+}
+
+.flexboxcontainer{
+    background-color: rgb(103, 20, 141);
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 30%;
+    float: right;
+    justify-content: space-between;
+    padding-right: 50px;
+    padding-left: 30px;
+    
+}
+
+.mid{
+    height: 100%;
+    width: 30%;
+    background-color: blue;
+    display: inline-flex;
+    align-items: center;
+    float: 
+    
+}
+
+.title{
+    background-color: rgb(48, 156, 26);
+    height: 100%;
+    width: 20%;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+
+
+.bodycontainer{
+    height: 70vh;
+    background-color: aqua;
+}
+
+footer{
+    height: 15vh;
+    background-color: red;
+}
+
+.body1{
+    font-size: 30px;
+    height: 100%;
+}

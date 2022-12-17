@@ -22,7 +22,6 @@ p{
     height: 12vh;
     position: sticky;
     top: 0;
-    overflow: scroll;
     z-index: 1;
 
 }
@@ -44,7 +43,7 @@ footer{
 
 /*--sezione upperbar--*/
 .title{
-    width: 70%;
+    width: 80%;
     height: 100%;
     background-color: rgb(220, 235, 153);
     display: inline-flex;
@@ -58,7 +57,7 @@ footer{
     flex-direction: row;
     background-color: rgb(132, 241, 118);
     height: 100%;
-    width: 30%;
+    width: 20%;
     display: flex;
     float: right;
     align-items: center;
@@ -165,18 +164,54 @@ p{
 
 @media (max-width:768px) {
 
+    .upperbar{
+        z-index: none;
+    }
+
     .title{
-        width: 40%;
+        width: 50%;
         font-size: 25px;
-        padding-left: 10px;
+        padding-left: 15px;
     }
 
     .flexcontainer{
-        width: 60%;
-        font-size: 18px;
+        width: 50%;
+        font-size: 15px;
         padding: 0;
         padding-left: 5px;
-        padding-right: 5px;
+        padding-right: 15px;
     }
+
+    .flexbodyitem{
+        background-position: right;
+    }
+
+    .bodytitle,.bodyp{
+        padding-left: 20px;
+        background-size: 100% 100px;
+    }
+
+    .flexbodycontainer2{
+        flex-direction: column;
+        padding-top: 0;
+    }
+    
+    .flexbodyitem2_1{
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+    .flexbodyitem2_2{
+        position: relative ;
+        left: 50%;
+        transform: translatex(-50%);
+    }
+
+    .flexbodyitem2_2 img{
+        width: 380px;
+        height: 280px;
+    }
+
+
 
 }

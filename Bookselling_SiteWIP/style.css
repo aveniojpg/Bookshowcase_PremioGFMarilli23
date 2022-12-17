@@ -1,11 +1,20 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Alexandria', sans-serif;
 }
+
+
 
 a{
     text-decoration: none;
 }
+
+p{
+    font-weight: 300;
+}
+
+
 
 /*--suddivisione peso pagina--*/
 .upperbar{
@@ -13,11 +22,13 @@ a{
     height: 12vh;
     position: sticky;
     top: 0;
+    overflow: scroll;
+    z-index: 1;
+
 }
 
 .pagebody{
     background-color: rgb(193, 234, 245);
-    height: 80vh,;
 }
 
 footer{
@@ -38,8 +49,9 @@ footer{
     background-color: rgb(220, 235, 153);
     display: inline-flex;
     align-items: center;
-    padding-left: 50px;
+    padding-left: 40px;
     font-size: 35px;
+    font-weight: 500;
 }
 
 .flexcontainer{
@@ -57,32 +69,84 @@ footer{
 /* --fine-- */
 
 /* --sezione body-- */
-.bodybg{
-    height: 600px;
+.flexbodycontainer{
+    background-color: rgb(180, 176, 176);
+    height: 100%;
     width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.flexbodyitem1{
+    height: 500px;
     background-image: url(./1042582.jpg);
-    background-position: center;
     background-repeat: no-repeat;
-    opacity: 40%;    
+    background-position: center;
+    background-size: cover;   
+}
+
+.layover{
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.35)
 }
 
 .bodytitle1{
-    position:absolute;
-    top:30%;
     color: red;
-    padding-left: 50px;
+    position: absolute;
+    top: 45%;
+    font-size: 50px;
+}
+
+.bodyp1{
+    position:absolute;
+    top: 54%;
 }
 
 
 
-.bodydesc,.pagetitle{
-    padding-left: 50px;
+/* fine prima sezione body */
+
+.flexbodycontainer2{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    height: 100%;   
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
-.bodydesc{
-    width: 40%;
-    padding-bottom: 100px;
-} 
+.flexbodyitem2_1{
+    width: 50%;
+}
+
+.flexbodyitem2_2{
+    width: 50%;
+}
+
+.flexbodyitem2_2 img {
+    height: 350px;
+    width: 500px;
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.bodyp, .bodytitle{
+    padding-left: 40px;
+}
+
+.bodyp2{
+    font-size: 20px;
+}
+
+.bodytitle2{
+    padding-top: 80px;
+}
+
+
+/* fine seconda sezione body */
+
+
+
 /* --fine-- */
 
 /* --sezione footer-- */

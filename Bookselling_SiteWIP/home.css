@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Alexandria', sans-serif;
+}
+
+a:visited { text-decoration: none; color:rgb(253, 253, 253); }
+/* a:hover { text-decoration: none; color:blue; }
+a:focus { text-decoration: none; color:yellow; } */
+a:hover, a:active { text-decoration: none; color:rgb(159, 213, 53) }
+/* css per togliere i colori quando si visita i link 
+- active/hover quando si va sopra il link
+- visited si resetta al colore normale impostato
+*/
+
+
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-weight: 300;
+}
+
+
+
+/*--suddivisione peso pagina--*/
+.upperbar{
+    background-color: rgb(76, 171, 182);
+    height: 12vh;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.pagebody{
+    background-color: rgb(193, 234, 245);
+}
+
+footer{
+    background-color:  rgb(76, 171, 182);
+    height: 12vh;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+   
+}
+/*--fine-- */
+
+
+/*--sezione upperbar--*/
+.title{
+    width: 80%;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 40px;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.flexcontainer{
+    flex-direction: row;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    float: right;
+    align-items: center;
+    padding-right: 50px;
+    font-size: 20px;
+    justify-content: space-around;
+}
+/* --fine-- */
+
+/* --sezione body-- */
+.flexbodycontainer{
+    background-color: rgb(180, 176, 176);
+    height: 100%;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.flexbodyitem1{
+    height: 500px;
+    background-image: url(./1042582.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;   
+}
+
+.layover{
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.35)
+}
+
+.bodytitle1{
+    color: rgb(12, 12, 12);
+    position: absolute;
+    top: 45%;
+    font-size: 50px;
+}
+
+.bodyp1{
+    position:absolute;
+    top: 54%;
+}
+
+
+
+/* fine prima sezione body */
+
+.flexbodycontainer2{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    height: 100%;   
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.flexbodyitem2_1{
+    width: 50%;
+}
+
+.flexbodyitem2_2{
+    width: 50%;
+}
+
+.flexbodyitem2_2 img {
+    
+    height: 350px;
+    width: 500px;
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.bodytitle2,.bodyp2{
+    padding-left: 120px;
+}
+
+.bodytitle1,.bodyp1{
+    padding-left: 70px;
+}
+
+.bodyp2{
+    font-size: 20px;
+}
+
+.bodytitle2{
+    padding-top: 80px;
+}
+
+
+/* fine seconda sezione body */
+/* --fine-- */
+
+/* --sezione footer-- */
+.flexfooter{
+    height: 100%    ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+p{
+    font-size: 30px;
+}
+/* fine */
+
+@media (max-width:768px) {
+/* sezione upperbar */
+    .upperbar{
+        z-index: none;
+    }
+
+    .title{
+        width: 50%;
+        font-size: 25px;
+        padding-left: 15px;
+    }
+
+    .flexcontainer{
+        width: 50%;
+        font-size: 15px;
+        padding: 0;
+        padding-left: 5px;
+        padding-right: 15px;
+    }
+    /* fine */
+
+    /* sezione body */
+    .flexbodyitem{
+        background-position: right;
+    }
+
+    .bodytitle,.bodyp{
+        padding-left: 20px;
+        background-size: 100% 100px;
+    }
+
+
+    .flexbodycontainer2{
+        flex-direction: column;
+        padding-top: 0;
+    }
+    
+    .flexbodyitem2_1{
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+    .flexbodyitem2_2{
+        position: relative ;
+        left: 50%;
+        transform: translatex(-50%);
+    }
+
+    .flexbodyitem2_2 img{
+        width: 380px;
+        height: 280px;
+    }
+    /* fine */
+
+
+
+}

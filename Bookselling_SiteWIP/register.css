@@ -9,7 +9,7 @@
 /* a:hover { text-decoration: none; color:blue; }
 a:focus { text-decoration: none; color:yellow; } */
 a:hover, a:active { text-decoration: none; color:rgb(159, 213, 53) }
-/* css per togliere i colori quando si visita i link 
+/* css per togliere i colori quando si visita i link
 - active/hover quando si va sopra il link
 - visited si resetta al colore normale impostato
 */
@@ -20,6 +20,7 @@ a{
 }
 
 /* suddivisione peso pagina */
+
 .upperbar{
     background-color: rgb(76, 171, 182);
     height: 12vh;
@@ -31,16 +32,13 @@ a{
 
 .pagebody{
     background-color: rgb(193, 234, 245);
-    height: 90vh;
+    height: 100vh;
 }
 
 footer{
     background-color:  rgb(76, 171, 182);
     height: 12vh;
     width: 100%;
-    position: relative;
-    bottom: 0;
-   
 }
 /* fine */
 
@@ -75,7 +73,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
+
 }
 /* fine */
 
@@ -143,7 +141,7 @@ div.register{
 }
 
 .flexbottom{
-    height: 730px;
+    height: 400px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -159,7 +157,7 @@ div.register{
 .textfield{
     width: 96%;
     height: 40px;
-    background-color: #ffffff;  
+    background-color: #ffffff;
     border:1px solid black;
     font-weight: 300;
 }
@@ -170,12 +168,12 @@ div.register{
 
 .button{
     margin-left: 25px;
-    margin-top: 10px;
-    height: 40px;
+    height: 60px;
     width: 100px;
     background-color: white;
     border:1px solid black;
     cursor: pointer;
+    margin-bottom: 50px;
 }
 
 .input-title{
@@ -221,7 +219,7 @@ h4{
         width: 90%;
     }
 
-    .flexcontainerlogin{
+    .flexcontainerregister{
         width: 90%;
     }
 

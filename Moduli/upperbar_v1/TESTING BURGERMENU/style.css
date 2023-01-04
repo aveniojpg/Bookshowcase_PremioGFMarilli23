@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* impostazione peso parti */
+.upperbar{
+    height: 12vh;
+    background-color: rgb(135, 176, 135);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+/* fine */
+
+.title{
+    padding-left: 20px;
+    line-height: 12vh;
+    font-size: 30px;
+    display: block;
+}
+
+.title a{
+    text-decoration: none;
+    color: black;
+}
+
+.title a:hover{
+    color: purple;
+    transition: 0.3s;
+
+}
+/* ---- MODULO RELATIVO ALL'UPPERBAR MODIFICARE CON ATTENZIONE ---- */
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center ;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    color: red;
+}
+
+/* CREAZIONE LINEE */
+.hamburger{
+    position:relative;
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.hamburger::before,.hamburger::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    right: 0;
+    background-color: white;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.hamburger::before{
+    width: 30px;
+    top: -10px;
+}
+
+.hamburger::after{
+    width: 30px;
+    top: 10px;
+}
+/* FINE CREAZIONE LINEE */
+
+
+/* CSS CHECKBOX */
+.toggle-menu{
+    position: absolute;
+    background-color: red;
+    right: 10px;
+    width: 30px;
+    height: 100%;
+    z-index: 3;
+    cursor:pointer;
+    opacity: 0;
+    /* problemino, rispetto al video la checkbox non si posiziona sopra */
+}
+/* FINE CSS CHECKBOX */
+
+.hamburger,.toggle-menu{
+    display: none;
+}
+
+.menu li a,.menu li a:hover{
+    padding: 30px;
+    font-size: 24px;
+}
+
+.navigation input:checked ~ .hamburger {
+    background: transparent;
+}
+
+.navigation input:checked ~ .hamburger::before {
+    top: 0;
+    transform: rotate(-45deg);
+    width: 30px;
+}
+
+.navigation input:checked ~ .hamburger::after {
+    top: 0;
+    transform: rotate(45deg);
+    width: 30px;
+}
+
+.navigation input:checked ~ .menu{
+    right: 0;
+}
+
+/* ----- FINE MODULO UPPERBAR ----- */
+
+@media (max-width:768px){
+
+    /* Media query relativo a burger menu */
+
+    .title{
+        position: absolute;
+        right: 20px;
+    }
+
+    .toggle-menu,.hamburger{
+        left: 20px;
+    }
+   
+    .hamburger,.toggle-menu{
+        display: block;
+    }
+
+    .menu {
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        left: -300px;
+        top: 0;
+        background-color: rgb(169, 132, 204);
+        width: 250px;
+        height: 100%;
+        padding-top: 65px;
+    }
+
+    .menu li{
+        width: 100%;
+    }
+
+    .menu li a,.menu li a:hover{
+        padding: 30px;
+        font-size: 24px;
+    }
+
+    .navigation input:checked ~ .menu {
+        left: 0;
+    }
+   
+
+    .navigation input:checked ~ .hamburger {
+        background: transparent;
+    }
+
+    .navigation input:checked ~ .hamburger::before {
+        top: 0;
+        transform: rotate(-45deg);
+        width: 30px;
+    }
+
+    .navigation input:checked ~ .hamburger::after {
+        top: 0;
+        transform: rotate(45deg);
+        width: 30px;
+    }
+    /* fine */
+}

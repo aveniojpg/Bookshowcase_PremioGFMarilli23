@@ -5,25 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accedi</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
     <!-- font momentaneo -->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alexandria&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- sezione upperbar -->
-    <div class="upperbar">
-        <div class="flexcontainer">
-            <div class="flexitem flexitem1"><a href="">|Accedi|</a></div>
-            <div class="flexitem flexitem3"><a href="">|Contattaci|</a></div>
-            <!-- <div class="flexitem flexitem2"><a href="">|item3|</a></div> -->
-            <!-- <div class="flexitem flexitem4"><a href="">|item4|</a></div> -->
-        </div>
-        <div class="title"><a href="./home.html">Bookselling</a></div>
-    </div>
-    <!-- fine sezione upperbar -->
-
+    <div id="nav"></div>
+    <script>
+        $(function(){
+          $("#nav").load("navbar_prelog.html");
+        });
+        </script>
     <!-- sezione body -->
     <div class="pagebody">
         <div class="flexcontainerswap">
@@ -32,6 +31,10 @@
         </div>
         <form action="">
         <div class="flexcontainerlogin">
+            <div class="containertitle">
+                Login
+            </div>
+            <div class="flexbottom">
             <div class="flexcontainerloginchild flexcontainerloginchild1">
                 <h4 class="input-title">Email</h4>
                 <input type="text" placeholder="Inserisci la tua e-mail" class="textfield">
@@ -43,20 +46,15 @@
             <a href="" class="passforget">Password dimenticata?</a>
             <input type="submit" value="Accedi" class="button"> 
         </div>
-    </form>
-    <!-- fine sezione body -->
     </div>
-
-    <!-- sezione footer -->
-    <footer>
-        <div class="flexfooter">
-            <div class="footeritem footeritem1"><a href="">|item1|</a></div>
-            <div class="footeritem footeritem2"><a href="">|item1|</a></div>
-            <div class="footeritem footeritem3"><a href="">|item1|</a></div>
-            <div class="footeritem footeritem4"><a href="">|item1|</a></div>
-        </div>
-    </footer>
-    <!-- fine sezione footer -->
+    </form>
+    </div>
+    <div id="footer"></div>
+    <script>
+        $(function(){
+          $("#footer").load("footer.html");
+        });
+        </script>
     
 </body>
 </html>

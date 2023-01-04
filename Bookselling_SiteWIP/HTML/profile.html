@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookselling</title>
+    <link rel="stylesheet" href="/CSS/profile.css">
+    <link rel="stylesheet" href="/CSS/navbar.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <!-- font momentaneo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alexandria&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="nav"></div>
+    <script>
+        $(function(){
+          $("#nav").load("navbar.html");
+        });
+        </script>
+
+     <!-- SEZIONE BODY -->
+     <div class="pagebody">
+        <div class="container">
+            <div class="topsection">Profilo
+            </div>
+            <div class="midsection">
+                <div class="userinfocontainer">
+                <div class="profilepic"></div>
+                <div class="userdetails">
+                    <div class="username">Nome Cognome</div>
+                    <div class="nickname">@nickname</div>
+                    <div class="reviews">Media recensione: null</div>
+                </div>
+            </div>
+            <div class="usercontacts">
+                <input type="button" value="" class="editprofile">
+                <div class="contacttitle">Contatti</div>
+                <div class="contactsubtitle">EMAIL</div>
+                <div class="usermail"><a href="">spam@hotmail.com</a></div>
+                <div class="contacttitle">Social</div>
+                <div class="flexsocial">
+                    <div class="socialname">Instagram:&nbsp</div>
+                    <div class="socialusername"> aveniojpg</div>
+                </div>
+                <div class="flexsocial">
+                    <div class="socialname">Twitter:&nbsp</div>
+                    <div class="socialusername"> aveniojpg</div>
+                </div>
+                <!-- <div class="flexsocial">
+                    <div class="socialname">Instagram:&nbsp</div>
+                    <div class="socialusername"> aveniojpg</div>
+                </div> -->
+            </div>
+          
+            </div>
+            <div class="bottomsection"></div>
+        </div>
+     </div>
+
+     <div id="footer"></div>
+     <script>
+        $(function(){
+          $("#footer").load("footer.html");
+        });
+        </script>
+
+</body>
+</html>

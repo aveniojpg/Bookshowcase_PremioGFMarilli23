@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Alexandria', sans-serif;
+
+}
+
+/* a:visited { text-decoration: none; color:rgb(255, 255, 255); } */
+/* a:hover { text-decoration: none; color:blue; }
+a:focus { text-decoration: none; color:yellow; } */
+a:hover, a:active { text-decoration: none; color:rgb(159, 213, 53) }
+/* css per togliere i colori quando si visita i link
+- active/hover quando si va sopra il link
+- visited si resetta al colore normale impostato
+*/
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* suddivisione peso pagina */
+
+
+
+
+
+.pagebody{
+    background-color: rgb(193, 234, 245);
+    height: 100vh;
+}
+
+
+
+
+/* fine */
+
+/* sezione upperbar */
+
+.title{
+    width: 50%;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 40px;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.flexcontainer{
+    flex-direction: row;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    float: right;
+    align-items: center;
+    justify-content:space-around;
+    padding-right: 50px;
+    font-size: 20px;
+}
+/* fine */
+
+/* sezione footer */
+.flexfooter{
+    height: 100%    ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+/* fine */
+
+p{
+    font-size: 30px;
+}
+/* fine */
+
+/* sezione body */
+
+/* parte barra swap */
+.flexcontainerswap{
+    width: 800px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    top: 20%;
+    display: flex;
+    flex: row;
+    align-items: center;
+}
+
+div.login{
+    width: 50%;
+    height: 100%;
+    line-height: 50px;
+    padding-left: 25px;
+}
+
+div.register{
+    background-color: cadetblue;
+    width: 50%;
+    height: 100%;
+    line-height: 50px;
+    padding-left: 25px;
+}
+/* fine */
+
+
+/* sezione form */
+.flexcontainerregister{
+    /* border-radius: 6px; */
+    width: 800px;
+    height: 550px;
+    background-color: rgb(255, 255, 255);
+    left: 50%;
+    position: absolute;
+    top: 30%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.containertitle{
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    display: inline-flex;
+    line-height: 70px;
+    font-size: 25px;
+}
+
+
+.flexbottom{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.flexcontainerregisterchild{
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+
+.textfield{
+    width: 96%;
+    height: 40px;
+    background-color: #ffffff;
+    border:1px solid black;
+    font-weight: 300;
+}
+
+.flexcontainerregisterchild,.passforget,.containertitle{
+    padding-left: 25px;
+}
+
+.button{
+    margin-left: 25px;
+    height: 60px;
+    width: 100px;
+    background-color: white;
+    border:1px solid black;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.input-title{
+    padding-bottom: 8px;
+}
+
+h4{
+    font-weight: 400;
+}
+
+.passforget{
+    color: black;
+}
+
+.passforget:hover{
+    text-decoration: underline;
+}
+
+@media(max-width:768px){
+    /* sezione upperbar */
+    .upperbar{
+        z-index: none;
+    }
+
+    .title{
+        width: 50%;
+        font-size: 25px;
+        padding-left: 15px;
+    }
+
+    .flexcontainer{
+        width: 50%;
+        font-size: 15px;
+        padding: 0;
+        padding-left: 5px;
+        padding-right: 15px;
+}
+/* fine */
+
+/* sezione body */
+
+    .flexcontainerswap{
+        width: 90%;
+    }
+
+    .flexcontainerregister{
+        width: 90%;
+    }
+
+    .textfield{
+        width: 90%;
+    }
+
+    .passforget{
+        font-size: 13px;
+    }
+
+    /* sezione footer */
+
+}
+
+
+
+

@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+
+.upperbar{
+    height: 12vh;
+    width: 100%;
+    background-color: gray;
+}
+
+.tools{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    height: 100%;
+    border: 0;
+    float: right;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    padding-right: 100px;
+}
+
+.title{
+    display: inline-flex;
+    height: 100%;
+    width: 35%;
+    align-items: center;
+    float: left;
+    padding-left: 50px;
+    font-size: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.flexbutton{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+}
+
+.leftbox{
+    position: sticky;
+    display: inline-block;
+    height: 100vh;
+    width: 20%;
+    background-color: aquamarine;
+}
+
+.postcontainer{
+    position: absolute;
+    display: inline-block;
+    height: 100vh;
+    width: 80%;
+    background-color: blueviolet;
+}
+
+.checkbox{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+.checkboxinput{
+    display: none;
+}
+
+.checkbox_box{
+    width: 1.25em;
+    height: 1.25em;
+    border: 2px solid gray;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    flex-shrink: 0;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+.checkbox_box::after{
+    content: '\2714';
+    color: white;
+    transform: scale(0);
+    transition: transform 0.15s;
+}
+
+.checkboxinput:checked + .checkbox_box{
+    background: #2266dc;
+    border-color: #2266dc;
+}
+
+.checkboxinput:checked + .checkbox_box::after{
+    transform: scale(1);
+}
+
+h1{
+    padding-left: 45px;
+    padding-top: 20px;
+}
+
+.searchbar{
+    height: 100%;
+    width: 30%;
+    display: inline-flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.searchbar label input{
+    width: 25vw;
+    height: 30px;
+    border-radius: 6px;
+    transform: translateX(15%);
+    border: 2px solid black;
+    padding-left: 35px;   
+}
+
+.searchbar label ion-icon {
+    position: relative;
+    width: 25px;
+    top: 5px;
+    left: -80%;
+    color: darkgray;
+    font-size: 1.1em;
+}
+
+

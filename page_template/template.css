@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Alexandria','Sans serif';
+}
+
+.pagebody{
+    height: 100vh;
+}
+

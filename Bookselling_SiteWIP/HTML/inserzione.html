@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="inserzione.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alexandria&display=swap" rel="stylesheet">
+</head>
+<body>  
+    <div id="nav"></div>
+    <script>
+        $(function(){
+          $("#nav").load("navbar.html");
+        });
+        </script>
+    <!-- sezione body -->
+    <div class="pagebody">
+      <div class="formcontainer">
+        <div class="booktitlecontainer">
+          <input type="text" name="" id="" placeholder="Inserisci un titolo" class="booktitle">
+        </div>
+        <div class="uploadcontainer">
+          <div class="centercontainer">
+          <div id="uploadhint">Carica le foto delle copertine.</div>
+          <div class="fleximgupload">
+            <div class="inputcontainer"><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile1(event)" class="fileinput"></div>
+            <script>
+                var loadFile1 = function(event) {
+                    var image = document.getElementById('output1');
+                    image.src = URL.createObjectURL(event.target.files[0]);
+                };
+                </script>
+            <div class="inputcontainer"><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile2(event)" class="fileinput"></div>
+            <script>
+                var loadFile2 = function(event) {
+                    var image = document.getElementById('output2');
+                    image.src = URL.createObjectURL(event.target.files[0]);
+                };
+                </script>
+            </div>
+        <div class="fleximg">
+        <img id="output1" class="imgupload img1" />
+        <img id="output2" class="imgupload img2" />
+        </div>
+         <div class="flexhintcover">
+          <div>Fronte</div>
+          <div>Retro</div>
+         </div>
+      </div>
+      </div>
+        <div class="bookdesccontainer">
+          <div class="maxchar">massimo 200 caratteri</div>
+          <textarea name="" id="" cols="30" rows="10" class="bookdesc" placeholder="Descrivi le condizioni del libro!" maxlength="500">
+          </textarea>
+        </div>
+        <div class="optionscontainer">
+        <div class="optionsflexcontainer">
+          <div class="row row1">
+            <div class="label label1">Condizioni:</div>
+            <select name="" id="" class="selection">
+              <option value="">Discrete</option>
+              <option value="">Ottime</option>
+              <option value="">Nuovo</option>
+            </select>
+          </div>
+          <div class="row row2">
+            <div class="label label2">Materia:</div>
+            <select name="" id="" class="selection">
+              <option value="">Informatica</option>
+              <option value="">Italiano</option>
+              <option value="">Matematica</option>
+            </select>
+          </div>
+        </div>
+        <!-- <div class="optionsflexcontainer">
+          <div class="row row3"></div>
+          <div class="row row4"></div>
+        </div> -->
+      </div>
+
+      </div>
+    </div>
+
+
+    <!-- fine sezione body -->
+
+    <div id="footer"></div>
+    <script>
+        $(function(){
+          $("#footer").load("footer.html");
+        });
+        </script>
+
+    
+</body>
+</html>

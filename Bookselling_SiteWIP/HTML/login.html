@@ -1,60 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accedi</title>
-    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="../CSS/login.css">
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/footer.css">
 
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
     <!-- font momentaneo -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alexandria&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div id="nav"></div>
     <script>
-        $(function(){
-          $("#nav").load("navbar_prelog.html");
+        $(function () {
+            $("#nav").load("navbar_prelog.html");
         });
-        </script>
+    </script>
     <!-- sezione body -->
     <div class="pagebody">
         <div class="flexcontainerswap">
             <div class="login"><a href="./login.html">Accedi</a></div>
             <div class="register"><a href="./register.html">Registrati</a></div>
         </div>
-        <form action="">
-        <div class="flexcontainerlogin">
-            <div class="containertitle">
-                Login
-            </div>
-            <div class="flexbottom">
+        <form action="gestione.php" method="post" class="flexcontainerlogin" class="flexbottom">
+            <div class="containertitle"> Login </div>
             <div class="flexcontainerloginchild flexcontainerloginchild1">
                 <h4 class="input-title">Email</h4>
-                <input type="text" placeholder="Inserisci la tua e-mail" class="textfield">
+                <input type="text" placeholder="Inserisci la tua e-mail" name="email" class="textfield" required>
             </div>
             <div class="flexcontainerloginchild flexcontainerloginchild2">
                 <h4 class="input-title">Password</h4>
-                <input type="password" placeholder="Inserisci la password" class="textfield">
+                <input type="password" name="password" placeholder="Inserisci la password" class="textfield" required>
             </div>
             <a href="" class="passforget">Password dimenticata?</a>
-            <input type="submit" value="Accedi" class="button"> 
-        </div>
-    </div>
-    </form>
+            <input type="submit" name="submit_login" value="login" class="button">
+        </form>
     </div>
     <div id="footer"></div>
     <script>
-        $(function(){
-          $("#footer").load("footer.html");
+        $(function () {
+            $("#footer").load("footer.html");
         });
-        </script>
-    
+    </script>
+
 </body>
+
 </html>

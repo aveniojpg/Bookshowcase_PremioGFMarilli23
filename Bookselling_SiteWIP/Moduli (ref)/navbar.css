@@ -1,12 +1,12 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
     font-family: Alexandria, sans-serif;
 }
 
 /* impostazione peso parti */
-.upperbar{
-    height: 12vh;
+.upperbar {
+    height: 85px;
     background-color: rgb(76, 171, 182);
     position: relative;
     display: flex;
@@ -14,73 +14,76 @@
     position: -webkit-sticky;
 }
 
-/* footer{
-    background-color:  rgb(76, 171, 182);
-    height: 12vh;
-    width: 100%;
-    position:absolute;
-    bottom: 0;
-    z-index: 5;
+.mobilesection {
+    height: 75px;
+    background-color: rgb(255, 255, 255);
+    display: none;
+}
 
-} */
+
 /* fine */
 
 /* ---- MODULO RELATIVO ALL'UPPERBAR MODIFICARE CON ATTENZIONE ---- */
 
-.title{
-    padding-left: 20px;
-    line-height: 12vh;
+.title {
+    padding-left: 35px;
+    line-height: 85px;
     font-size: 30px;
     display: block;
+    width: fit-content;
 }
 
-.title a{
+.title a {
     text-decoration: none;
-    color:white
+    color: white
 }
 
-.title a:hover{
+.title a:hover {
     color: rgb(159, 213, 53);
     transition: 0.3s;
 }
 
 
-.navigation{
+.navigation {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.menu{
+.menu {
+    width: 500px;
     display: flex;
     justify-content: center;
     flex-direction: row;
-    align-items: center ;
+    align-items: center;
     z-index: 1;
     transition: 0.5s;
+    padding-right: 35px;
 }
 
 .menu li {
     list-style: none;
 }
 
-.menu li a{
+.menu li a {
     color: white;
     text-decoration: none;
     display: block;
     width: 100%;
-    padding: 20px;
+    padding: 8px;
     transition: 0.3s;
 }
+
+
 
 .menu li a:hover {
     color: rgb(159, 213, 53);
 }
 
 /* CREAZIONE LINEE */
-.hamburger{
-    position:relative;
+.hamburger {
+    position: relative;
     width: 30px;
     height: 4px;
     background-color: white;
@@ -90,7 +93,8 @@
     transition: 0.3s;
 }
 
-.hamburger::before,.hamburger::after {
+.hamburger::before,
+.hamburger::after {
     content: "";
     position: absolute;
     height: 4px;
@@ -100,112 +104,124 @@
     transition: 0.3s;
 }
 
-.hamburger::before{
+.hamburger::before {
     width: 30px;
     top: -10px;
 }
 
-.hamburger::after{
+.hamburger::after {
     width: 30px;
     top: 10px;
 }
+
 /* FINE CREAZIONE LINEE */
 
 
 /* CSS CHECKBOX */
-.toggle-menu{
+.toggle-menu {
     position: absolute;
     background-color: red;
     right: 10px;
     width: 30px;
     height: 100%;
     z-index: 3;
-    cursor:pointer;
+    cursor: pointer;
     opacity: 0;
     /* problemino, rispetto al video la checkbox non si posiziona sopra */
 }
+
 /* FINE CSS CHECKBOX */
 
-.hamburger,.toggle-menu{
+.hamburger,
+.toggle-menu {
     display: none;
 }
 
-.menu li a,.menu li a:hover{
-    padding: 30px;
-    font-size: 24px;
+.menu li a,
+.menu li a:hover {
+    padding: 20px;
+    font-size: 20px;
 }
 
-.navigation input:checked ~ .hamburger {
+.navigation input:checked~.hamburger {
     background: transparent;
 }
 
-.navigation input:checked ~ .hamburger::before {
+.navigation input:checked~.hamburger::before {
     top: 0;
     transform: rotate(-45deg);
     width: 30px;
 }
 
-.navigation input:checked ~ .hamburger::after {
+.navigation input:checked~.hamburger::after {
     top: 0;
     transform: rotate(45deg);
     width: 30px;
 }
 
-.navigation input:checked ~ .menu{
+.navigation input:checked~.menu {
     right: 0;
 }
 
 /* ----- FINE MODULO UPPERBAR ----- */
 
+/* CSS SEARCHBAR */
 
-/* MODULO FOOTER */
-
-
-
-/* .flexfooter{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-}
-
-footer{
-    background-color:  rgb(76, 171, 182);
-    height: 12vh;
+.searchbar {
     width: 100%;
-    display: flex;
-    max-height: 100vh;
-    flex-direction: column;
-    justify-content: space-between;
+    height: 50%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #e9e3e3;
+    border: 0px;
+    padding-left: 30px;
+    border: 1px solid black;
 }
 
-footer a{
-    text-decoration: none;
-    color: white;
+.searchwrap {
+    height: 100%;
+    width: 40%;
+    margin-left: 40px;
 }
 
-footer a:hover{
-    color:rgb(159, 213, 53);
-    transition: 0.3s;
-} */
+.searchbar[type=search] {
+    background-image: url(./searchbaricon.png);
+    background-size: 15px;
+    background-position: center;
+    background-position: right;
+    background-position: 10px;
+    background-repeat: no-repeat;
+}
 
 
 
-@media (max-width:768px){
+@media (max-width:1200px) {
 
     /* Media query relativo a burger menu */
 
-    .title{
-        position: absolute;
-        left: 50px;
+    .upperbar{
+        height: 80px;
     }
 
-    .toggle-menu,.hamburger{
+    .searchwrap {
+        display: none;
+    }
+
+    .title {
+        position: absolute;
+        left: 40px;
+        line-height: 80px;
+    }
+
+    .toggle-menu,
+    .hamburger {
         left: 20px;
     }
-   
-    .hamburger,.toggle-menu{
+
+    .hamburger,
+    .toggle-menu,
+    .mobilesection {
         display: block;
     }
 
@@ -220,14 +236,15 @@ footer a:hover{
         width: 250px;
         height: 100vh;
         padding-top: 100px;
-        border-right: 8px solid rgb(159, 213, 53);     
+        border-right: 8px solid rgb(159, 213, 53);
     }
 
-    .menu li{
+    .menu li {
         width: 100%;
     }
 
-    .menu li a,.menu li a:hover{
+    .menu li a,
+    .menu li a:hover {
         padding: 17px;
         padding-left: 5%;
         font-size: 17px;
@@ -239,25 +256,39 @@ footer a:hover{
 
     }
 
-    .navigation input:checked ~ .menu {
+    .navigation input:checked~.menu {
         left: 0;
     }
-   
 
-    .navigation input:checked ~ .hamburger {
+
+    .navigation input:checked~.hamburger {
         background: transparent;
     }
 
-    .navigation input:checked ~ .hamburger::before {
+    .navigation input:checked~.hamburger::before {
         top: 0;
         transform: rotate(-45deg);
         width: 30px;
     }
 
-    .navigation input:checked ~ .hamburger::after {
+    .navigation input:checked~.hamburger::after {
         top: 0;
         transform: rotate(45deg);
         width: 30px;
     }
-    /* fine */
+
+
+    .searchbar {
+        height: 65%;
+        width: 95%;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+   
+        
+
+    }
+        /* fine */
+
 }

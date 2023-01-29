@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Alexandria','Sans serif';
+}
+
+
+html {
+    height: 100%;
+}
+body {
+    min-height: 1100px;
+}
+
+.pagebody{
+    height: 100%;
+}
+
+
+
+
+.maincontainer{
+    height: 700px;
+    width: 70%;
+    position: relative;
+    left: 50%;
+    margin-top: 100px;
+    transform: translateX(-50%);
+    border:1px solid rgb(171, 168, 168);
+    display: flex;
+}
+
+/* PARTE DI DESTRA
+ */
+.pagetitle{
+    display: none;
+}
+
+.imgsection{
+    height: 100%;
+    width: 60%;
+    /* background-color: rgb(192, 192, 213); */
+}
+
+.infosection{
+    height: 100%;
+    width: 40%;
+    /* background-color: rgb(180, 229, 229); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left:1px solid rgb(171, 168, 168);
+}
+
+.booktitle{
+    /* border:1px solid rgb(171, 168, 168); */
+    border: none;
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 10px;
+    height: 5%;
+}
+
+
+textarea{
+    height: 40%;
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-weight: 300;
+    resize: none;
+    /* border:1px solid rgb(171, 168, 168) */
+    border: none;
+
+}
+
+textarea,input,.username{
+    width: 80%;
+}
+
+.uploadbtn:hover{
+    background-color: rgb(116, 219, 195);
+    transition: 0.3s;
+
+
+}
+
+.optionscontainer{
+    height: 6%;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+    border-bottom:1px solid rgb(171, 168, 168);
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+
+.btncontainer{
+    height: 5%;
+    width: 80%;
+    margin-top: 20px;
+}
+
+#submitbutton{
+    height: 40px;
+    width:220px;
+    font-size: 15px;
+    background: none;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#submitbutton:hover{
+    background-color: rgb(116, 219, 195);
+    transition: 0.3s;
+
+}
+
+
+.sellermail{
+    width: 70%;
+    text-align: right;    
+    overflow: scroll;
+    background:none;
+        font-style: italic;
+}
+.price{
+    width: 20%;
+    text-align: right;
+}
+.sellermail,.price,.isbn{
+    border:none;
+    background: none;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.isbn{
+    width: 35%;
+    text-align: right;
+    font-size: 17px;
+}
+
+.label{
+    font-weight: 550;
+}
+/* 
+select{
+    font-weight: 200;
+    font-size: 16px;
+    background: none;
+    background-color: white;
+    border: 1px solid black;
+    text-align: right;
+    width: 30%;
+    cursor: pointer;
+} */
+
+.userinput{
+    font-weight: 300;
+}
+
+.usernamelabel{
+    width: 80%;
+    font-weight: 300;
+    margin-bottom: 10px;
+
+
+}
+
+.username{
+    display: inline;
+    font-weight: 300;
+    text-decoration: underline;
+    margin-bottom: 10px;
+
+
+}
+
+
+
+
+
+/* FINE */
+
+/* PARTE SX */
+
+
+
+.fleximgcontainer{
+    width: 90%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.uploadhint{
+    width: 100%;
+    /* background-color: green; */
+    height: 5%;
+    margin-left: 58px;
+    position: relative;
+    top: 20px;
+ 
+
+}
+.imgcontainer{
+    /* background-color: red; */
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.imgplaceholder{
+    margin-top: 50px;
+    width: 280px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.weaklabel{
+    margin-top: 13px;
+    text-align: center;
+    font-style: italic;
+    font-weight: 200;
+}
+
+/* 
+.flexlabel{
+    display: flex;
+    justify-content: space-around;
+    width: 91.6%;
+    height: 20px;
+    background-color: yellow;
+} */
+
+
+
+/* input[type="file"] {
+    display: none;
+  }
+   */
+
+   /* TESTING AREA */
+
+   .uploadbtn{
+    width: 55%;
+    height: 40px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 15px;
+    margin-bottom: 20px;
+
+}
+
+   .uploadicon{
+    height: 15px;
+    width: 15px;
+    position: relative;
+    top: 2px;
+   }
+
+   .img{
+    height: 80%;
+    width: 100%;
+    /* background-color: green; */
+    position: relative;
+    background-image: url(./coverthumbnail.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.2)    
+
+   }
+
+@media (max-width:1400px) {
+
+    .pagetitle{
+        display: flex;
+        justify-content: center;
+        font-size: 28px;
+        font-weight: 500;
+        display: block;
+        width: 100vw;
+        padding-right: 5%;
+        padding-left: 5%;
+        text-overflow: ellipsis;
+        overflow-wrap: break-word;
+        inline-size: 100vw;
+        height: 200px;    
+        line-height: 200px;
+        max-height: 200px;
+     }
+
+     span
+     {
+       display: inline-block;
+       vertical-align: middle;
+       line-height: 30px; 
+       width: 100%;
+     }
+
+    .maincontainer{
+        margin-top: 20px;
+        height: 100%;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
+
+    .imgsection,.infosection{
+        width: 100%;
+    }
+
+    .infosection{
+        height: 650px;
+        padding-bottom: 50px;
+        top: 0;
+    }
+
+    .imgsection{
+        height: 500px;
+    }
+
+    .img{
+        max-height: 400px;
+        background-size: cover;
+        margin-top: auto;
+    }
+
+    
+
+
+    .uploadbtn{
+        width: 100%;
+        text-align: center;
+    }
+
+    .uploadhint{
+        text-align: center;
+        margin-left: 0;
+        margin-bottom: 25px;
+    }
+
+    .fleximgcontainer{
+        top: 38%;
+        height: 100%;
+    }
+
+    .imgcontainer{
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+
+    .booktitle{
+        display: none;
+    }
+
+   
+}
+
+@media (max-width:360px){
+
+    .uploadbtn{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:1000px){
+
+    #submitbutton{
+        width: 100%;
+        height: 50px;
+    }
+    
+
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

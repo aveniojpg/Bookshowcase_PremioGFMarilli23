@@ -82,59 +82,41 @@ p{
 .bodytitle1{
     color: rgb(12, 12, 12);
     position: absolute;
-    top: 45%;
+    top: 350px;
     font-size: 50px;
 }
 
 .bodyp1{
     position:absolute;
-    top: 54%;
+    top: 415px;
+    font-size: 17px;
 }
 
 
 
 /* fine prima sezione body */
 
-.flexbodycontainer2{
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    height: 100%;   
-    padding-top: 40px;
-    padding-bottom: 40px;
+.bottom{
+    height: 500px;
+    background-color: rgb(222, 215, 215);
 }
 
-.flexbodyitem2_1{
-    width: 50%;
+.flexitem1{
+    width:350px;
+    background-color: green;
 }
 
-.flexbodyitem2_2{
-    width: 50%;
+.subtitle{
+    font-weight: bold;
+    font-size: 30px;
 }
 
-.flexbodyitem2_2 img {
-    
-    height: 350px;
-    width: 500px;
-    position: relative;
-    left: 50%;
-    transform: translatex(-50%);
+.desc{
+    font-size: 17px;
 }
 
-.bodytitle2,.bodyp2{
-    padding-left: 120px;
-}
 
-.bodytitle1,.bodyp1{
-    padding-left: 70px;
-}
 
-.bodyp2{
-    font-size: 20px;
-}
-
-.bodytitle2{
-    padding-top: 80px;
-}
 
 
 /* fine seconda sezione body */
@@ -174,10 +156,6 @@ p{
     }
 
 
-    .flexbodycontainer2{
-        flex-direction: column;
-        padding-top: 0;
-    }
     
     .flexbodyitem2_1{
         width: 100%;
@@ -195,7 +173,13 @@ p{
         height: 280px;
     }
     /* fine */
+}
 
-
-
+@media (max-width:1030px) {
+    
+    .flexbodycontainer2{
+        flex-direction: column;
+        padding-top: 0;
+    }
+    
 }

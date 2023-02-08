@@ -19,32 +19,10 @@ a{
     color: white;
 }
 
-/* suddivisione peso pagina */
-.upperbar{
-    background-color: rgb(76, 171, 182);
-    height: 12vh;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-
+body{
+    background-color: rgb(197, 230, 239);
 }
 
-.pagebody{
-    background-color: rgb(193, 234, 245);
-    height: 76vh;
-}
-
-footer{
-    background-color:  rgb(76, 171, 182);
-    height: 12vh;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-   
-}
-/* fine */
-
-/* sezione upperbar */
 
 .title{
     width: 50%;
@@ -93,7 +71,7 @@ p{
     position: absolute;
     left: 50%;
     transform: translatex(-50%);
-    top: 20%;
+    top: 140px;
     display: flex;
     flex: row;
     align-items: center;
@@ -137,21 +115,22 @@ div.register{
 .flexcontainerlogin{
     /* border-radius: 6px; */
     width: 800px;
-    height: 350px;
+    height: 380px;
     background-color: rgb(255, 255, 255);
     left: 50%;
     position: absolute;
-    top: 30%;
+    top: 220px;
     transform: translateX(-50%);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    border: 1px solid black
+    border: 1px solid black;
 }
 
 
 .flexcontainerloginchild{
     padding-bottom: 10px;
+    padding-top: 20px;
     width: 100%;
 }
 
@@ -194,9 +173,13 @@ h4{
     text-decoration: underline;
 }
 
+
+
 /* fine */
 
-@media(max-width:768px){
+@media(max-width:900px){
+
+  
     /* sezione upperbar */
     .upperbar{
         z-index: none;

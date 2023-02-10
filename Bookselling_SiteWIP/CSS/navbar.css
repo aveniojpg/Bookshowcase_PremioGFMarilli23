@@ -186,7 +186,7 @@
 }
 
 .searchbar[type=search] {
-    background-image: url(./searchbaricon.png);
+    background-image: url(/SRC/searchbaricon.png);
     background-size: 15px;
     background-position: center;
     background-position: right;

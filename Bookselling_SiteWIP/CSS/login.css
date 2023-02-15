@@ -19,10 +19,6 @@ a{
     color: white;
 }
 
-body{
-    background-color: rgb(197, 230, 239);
-}
-
 
 .title{
     width: 50%;
@@ -79,7 +75,7 @@ p{
 
 div.login{
     width: 50%;
-    background-color: cadetblue;
+    background-color:black;
     height: 100%;
     line-height: 50px;
     padding-left: 25px;
@@ -90,6 +86,10 @@ div.register{
     height: 100%;
     line-height: 50px;
     padding-left: 25px;
+}
+
+.register a{
+    color: black;
 }
 /* fine */
 
@@ -149,7 +149,7 @@ div.register{
 
 .button{
     margin-left: 25px;
-    margin-top: 10px;
+    margin-top: 17px;
     height: 50px;
     width: 100px;
     background-color: white;
@@ -177,7 +177,7 @@ h4{
 
 /* fine */
 
-@media(max-width:900px){
+@media(max-width:1000px){
 
   
     /* sezione upperbar */

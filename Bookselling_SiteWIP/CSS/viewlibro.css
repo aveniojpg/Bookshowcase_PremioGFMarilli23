@@ -39,6 +39,9 @@ body {
 .imgsection{
     height: 100%;
     width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     /* background-color: rgb(192, 192, 213); */
 }
 
@@ -178,113 +181,60 @@ select{
 
 }
 
-
-
-
-
-/* FINE */
-
-/* PARTE SX */
-
-
-
-.fleximgcontainer{
-    width: 90%;
-    height: 95%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    align-items: center;
-    justify-content: center;
-   
-}
-
-.uploadhint{
-    width: 100%;
-    /* background-color: green; */
-    height: 5%;
-    margin-left: 58px;
-    position: relative;
-    top: 20px;
- 
-
-}
-.imgcontainer{
-    /* background-color: red; */
-    width: 100%;
-    height: 75%;
-    display: flex;
-    justify-content: space-around;
-
-}
-
-.imgplaceholder{
-    margin-top: 50px;
-    width: 280px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.weaklabel{
-    margin-top: 13px;
-    text-align: center;
-    font-style: italic;
-    font-weight: 200;
-}
-
-/* 
-.flexlabel{
-    display: flex;
-    justify-content: space-around;
-    width: 91.6%;
-    height: 20px;
-    background-color: yellow;
-} */
-
-
-
-/* input[type="file"] {
-    display: none;
-  }
-   */
-
-   /* TESTING AREA */
-
-   .uploadbtn{
-    width: 55%;
+.btnslide{
+    width: 40px;
     height: 40px;
-    background-color: white;
-    padding: 10px;
-    border: 1px solid black;
-    font-size: 15px;
-    margin-bottom: 20px;
-
+    position: absolute;
+    cursor: pointer;
+    background:none;
+    border: none;
 }
 
-   .uploadicon{
-    height: 15px;
-    width: 15px;
-    position: relative;
-    top: 2px;
-   }
-
-   .img{
-    height: 80%;
-    width: 100%;
-    /* background-color: green; */
-    position: relative;
-    background-image: url(./coverthumbnail.jpg);
-    background-size: cover;
+.btn1{
+    left: -80px;
+    background-image: url(/SRC/larrow.png);
     background-position: center;
-    box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.2)    
+    background-size: 25px;
+    background-repeat: no-repeat;
+  
+}
 
-   }
+.btn2{
+    right: -80px;
+    background-image: url(/SRC/rarrow.png);
+    background-position: center;
+    background-size: 25px;
+    background-repeat: no-repeat;
+}
+
+.imgcontainer{
+    position: absolute;
+    height: 550px;
+    box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.2);
+    background-color: red;  
+    width: 410px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img{
+    width: 410px;
+    height:550px;
+}
+
+.imgcontainer img:nth-child(1){
+    display: block;
+}
+
+.imgcontainer img{
+    display: none;
+}
+
 
 @media (max-width:1400px) {
+
+   
 
     .pagetitle{
         display: flex;
@@ -335,12 +285,9 @@ select{
     }
 
     .img{
-        max-height: 400px;
-        background-size: cover;
         margin-top: auto;
+        object-fit: cover;
     }
-
-    
 
 
     .uploadbtn{
@@ -361,9 +308,11 @@ select{
 
     .imgcontainer{
         align-items: center;
-        justify-content: space-evenly;
-        height: 100%;
+        margin-bottom: 40px;
+
     }
+
+  
 
     .booktitle{
         display: none;
@@ -381,14 +330,51 @@ select{
 
 @media (max-width:1000px){
 
+   
+
     #submitbutton{
         width: 100%;
         height: 50px;
     }
-    
 
-   
+    .imgsection{
+        justify-content: space-between;
+    }
+
+
+    .imgsection{
+        width: 90vw;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .imgcontainer{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
 }
+
+@media(max-width:600px) {
+
+    .imgcontainer{
+        width: 320px;
+        height: 500px;
+        position: absolute;
+    }
+
+    .btn1{
+        left: 0;
+    }
+
+    .btn2{
+        right: 0;
+    }
+    
+    
+}
+
 
 
 

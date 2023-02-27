@@ -1,0 +1,104 @@
+.gridcontainer{
+
+    width: 95%;
+    height: fit-content;
+    background-color: rgb(193, 232, 194);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 150px;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill,minmax(470px,1fr));
+    justify-items:center;
+    gap: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.box{
+    height: 300px;
+    width: 500px;
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.imgcontainer{
+    background-color: rgb(169, 222, 190);
+    width: 200px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+    
+}
+
+.imgcontainer img{
+    max-width: 100%;
+    min-height: 100%;
+    
+}
+
+.infocontainer{ 
+    width: 200px;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.flexcontainer{
+    width: 90%;
+    height: 90%;
+    /* background-color: violet; */
+    display: flex;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    justify-content: space-around;
+}
+
+.booktitle{
+    padding-top: 15px;
+    height: 50px;
+    /* background-color: red; */
+    font-size: 20px;
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
+    font-weight: bold;
+}
+
+.flexrow{
+    display: flex;
+    padding-top: 3px;
+}
+
+.label,.info{
+    font-size: 17px;
+}
+
+.label{
+    font-weight: bold
+}
+
+.info{
+    font-weight: 300;
+    padding-left: 3px;
+}
+
+.bookinfocontainer{
+    margin-top: 20px;
+    /* background-color: rgba(72, 199, 180, 0.534); */
+    position: relative;
+}
+
+.price{
+    margin-top: 29px;
+    /* background-color: aqua; */
+    font-weight: bold;
+    font-size: 23px;
+}

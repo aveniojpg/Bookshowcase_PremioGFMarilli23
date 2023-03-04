@@ -84,8 +84,6 @@ textarea,input,.username{
 .uploadbtn:hover{
     background-color: rgb(116, 219, 195);
     transition: 0.3s;
-
-
 }
 
 .optionscontainer{
@@ -216,16 +214,13 @@ select{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
-img{
+.imgcontainer img{
     height: 100%;
     min-width: 100%;
     object-fit: fill;
     object-position: left ;
-   
-
 }
 
 .imgcontainer img:nth-child(1){

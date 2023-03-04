@@ -21,6 +21,10 @@ a{
 
 /* suddivisione peso pagina */
 
+body{
+    min-height: 900px;
+}
+
 
 
 
@@ -102,6 +106,8 @@ div.register{
     padding-left: 25px;
 }
 /* fine */
+
+
 
 
 /* sezione form */

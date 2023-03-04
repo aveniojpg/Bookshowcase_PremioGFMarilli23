@@ -59,6 +59,7 @@
     align-items: center;
     z-index: 1;
     transition: 0.5s;
+    padding-right: 35px;
 }
 
 .menu li {

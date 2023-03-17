@@ -81,7 +81,7 @@ textarea,input{
 }
 
 .uploadbtn:hover{
-    background-color: rgb(116, 219, 195);
+    background-color: rgb(174, 219, 61);
     transition: 0.3s;
 
 
@@ -114,7 +114,7 @@ textarea,input{
 }
 
 #submitbutton:hover{
-    background-color: rgb(116, 219, 195);
+    background-color: rgb(174, 219, 61);
     transition: 0.3s;
 
 }

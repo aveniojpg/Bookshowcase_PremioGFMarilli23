@@ -7,7 +7,7 @@
 /* impostazione peso parti */
 .upperbar {
     height: 85px;
-    background-color: rgb(76, 171, 182);
+    background-color: rgb(90, 67, 204);
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -36,11 +36,17 @@
     width: 150px;
     height: 40px;
     background: none;
-    background-color: rgb(213, 219, 213);
+    background-color: white;
     border: 1px solid black;
     font-size: 14px;
     cursor: pointer;
     margin-left: 30px;
+    border-radius: 0.2rem;
+}
+
+.publish:hover{
+    background-color: rgb(174, 219, 61);
+    transition: 0.3s;
 }
 
 .hovermenu{
@@ -275,6 +281,7 @@
     border: 0px;
     padding-left: 30px;
     border: 1px solid rgb(86, 84, 84);
+    border-radius: 0.2rem;
 }
 
 .searchwrap {
@@ -293,6 +300,11 @@
     background-position: right;
     background-position: 10px;
     background-repeat: no-repeat;
+}
+
+img{
+    width: 30px;
+    height: 30px;
 }
 
 
@@ -347,11 +359,12 @@
         position: fixed;
         left: -300px;
         top: 0;
-        background-color: rgb(63, 69, 69);
+        background-color: rgb(75, 75, 75);
         width: 250px;
         height: 100vh;
         padding-top: 100px;
-        border-right: 8px solid rgb(159, 213, 53);
+        border-right: 8px solid rgb(174, 219, 61);
+
     }
 
     .menu li {

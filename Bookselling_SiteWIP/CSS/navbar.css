@@ -374,9 +374,12 @@
     }
 
  a{
-        color: white;
-        text-decoration: none;
+   text-decoration: none;
     }
+
+.menucontainer a {
+    color: white;
+}
 
     .menurow{
         width: 92%;

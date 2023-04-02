@@ -61,19 +61,44 @@ a{
     /* background-color: red; */
 }
 
-.deletebtn{
+.btncontainer{
     position: absolute;
-    right: 0;
-    height: 30px;
-    cursor: pointer;
-    background:none;
-    /* border: none; */
+    width: 100%;
+    background-color: red;
 }
 
-.deletebtn img{
-    width: 17px;
-    height: 17px;
+.btnflex{
+    display: flex;
+    justify-content: right;
+    background-color: blue;
+    width: 250px;
+    justify-content: space-between;
+    position: absolute;
+    right: 0;
 }
+
+
+
+
+.editbtn{
+    width: 120px;
+    height: 30px;
+    background:none;
+    cursor: pointer;
+}
+
+.smallbtn{
+    width:50px;
+}
+
+.editbtn img{
+    position: relative;
+    height: 15px;
+    width: 15px;
+    line-height: 30px;
+}
+
+
 
 .box{
     height: 300px;
@@ -260,7 +285,7 @@ a{
 
 @media (max-width: 1200px) {
     .gridcontainer{
-        top: 87px;
+        top: 110px;
     }
 
     .deletebtn{

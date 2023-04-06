@@ -9,7 +9,7 @@ html {
     height: 100%;
 }
 body {
-    min-height: 800px;
+    min-height: 900px;
 }
 
 .pagebody{
@@ -20,7 +20,7 @@ body {
 .maincontainer{
     /* background-color: red; */
     width: 1000px;
-    height: 550px;
+    height: 650px;
     position:absolute;
     top: 160px;
     left: 50%;
@@ -43,6 +43,7 @@ body {
     /* background-color: green; */
     display: flex;
     border-bottom: 1px solid black;
+    /* background-color: rgb(215, 141, 141); */
 }
 
 .pfpcontainer{
@@ -57,11 +58,42 @@ body {
     object-fit: cover;
     border: 1px solid rgb(185, 177, 177);
     overflow: hidden;
+    object-position: center;
 }
+
+.uploadbtn{
+    width: 30px;
+    /* background-color: rgb(255, 0, 0); */
+    background-color: white;
+    height: 30px;
+    position: absolute;
+    z-index: 1;
+    top: 140px;
+    left: 30px;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+.uploadbtn:hover{
+    background-color: rgb(143, 250, 143);
+    transition: 0.3s;
+}
+
+.uploadicon{
+    height: 15px;
+    width: 15px;
+    position: relative;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+
 
 .pfp{
     max-width: 100%;
-    max-height: 100%;
+    min-height: 100%;
+
+ 
 }
 
 .userinfo{
@@ -78,15 +110,29 @@ body {
 .name{
     font-size: 25px;
     font-weight: 400;
+    /* background-color: red; */
+   
 }
 
 .nickname{
     font-weight: 300;
     font-style: italic;
+    border: none;
+    /* border-bottom: 1px solid rgb(205, 205, 205); */
+    width: 250px;
+    margin-top: 5px;
+    font-size: 16px;
+    padding-bottom: 3px;
+
+}
+
+.maincontainer input:placeholder-shown{
+    font-size: 14px;
 }
 
 .name,.nickname{
-    padding-left: 15px;
+    position: relative;
+    left: 15px;
 }
 
 .subtitle{
@@ -98,6 +144,7 @@ body {
     width: 100%;
     height: 25px;
     display: flex;
+    margin-top: 5px;
 }
 
 .flexfield,.subtitle{
@@ -110,18 +157,47 @@ body {
 
 
 
+
+
+
+
+
 .infofield{
-    padding-left: 5px   ;
+    margin-left: 5px   ;
     font-weight: 200;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid grey;
 }
+
+.infosection input:placeholder-shown{
+    border: none;
+    border-bottom: 1px solid grey;
+    background: none;
+}
+
+.infosection input:active{
+    background:none;
+}
+
+input:focus{
+    outline: none;
+    background:none;
+    border-bottom: 1px solid grey;
+
+}
+
+
+
 
 .hrefwrap{
     position: absolute;
     margin-top: 20px;
-    right: 30px;
+    left: 25px;
     border: 1px;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
     /* background-color: red; */
     border: 1px solid black;
 }
@@ -133,6 +209,16 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+.submitbtn{
+    font-size: 15px;
+    height: 40px;
+    border: 1px solid black;
+    position: absolute;
+    right: 25px;
+    bottom: 20px;
+    cursor: pointer;
 }
 
 
@@ -149,12 +235,17 @@ body {
 
 @media(max-width:1050px) {
 
+    .uploadbtn{
+        top: 250px;
+        left: 25%;
+    }
+
     body{
         min-height: 900px;
     }
 
     .maincontainer{
-        height: 630px;
+        height: 700px;
         width: 80%;
         top: 200px;
     }
@@ -162,11 +253,28 @@ body {
     .usersection{
         height: 300px;
         flex-direction: column;
+       
     }
 
-    .name,.nickname{
-        padding-left: 0;
+    .name{
+        position: relative;
+        left: -0.8px;
+        font-size: 20px;
+        
     }
+
+    .nickname{
+        text-align: center;
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200PX;
+    }
+
+    /* .nickname input:placeholder-shown{
+        font-size: 10px;
+    } */
 
     .userinfo{
         width: 100%;
@@ -176,10 +284,12 @@ body {
         margin-top: 35px;
     }
 
+
     
     .pfpcontainer{
         position: relative;
         left: 50%;
+        top: 50%;
         margin-top: 35px;
         transform: translate(-50%,-50%);
     }
@@ -187,11 +297,33 @@ body {
 
 @media(max-width:700px) {
     .subtitle,.flexfield{
-        padding-left: 15px;
+        padding-left: 15px
     }
-}
+
+          .hrefwrap{
+        position: absolute;
+        left: 15px;
+    }
+
+    .submitbtn{
+        right: 15px;
+    }
+    }
+
+    .nickname{
+        /* position: absolute;
+        top: 220px;
+       width: 200px; */
+       font-size: 15px;
+    }
+
 
 @media(max-width:450px) {
+
+    .userinfo{
+        justify-content: center;
+    }
+
     .infotype{
         font-size: 15px;
     }
@@ -207,14 +339,9 @@ body {
 
     .name{
         font-size: 20px;
+        width: 100%;
     }
 
-    .hrefwrap{
-        top: 330px;
-        width: 25px;
-        height: 25px;
-        right: 15px;
-    }
 
     .hrefwrap img{
         width: 18px;

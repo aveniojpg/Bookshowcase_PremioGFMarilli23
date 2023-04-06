@@ -65,14 +65,21 @@ a{
     position: absolute;
     right: 0;
     height: 30px;
+    width: 30px;
     cursor: pointer;
     background:none;
     /* border: none; */
+    border: 1px solid black;
+
 }
 
 .deletebtn img{
     width: 17px;
     height: 17px;
+    /* background-color: red; */
+    position: relative;
+    top: 38%;
+    transform: translateY(-50%);
 }
 
 .box{

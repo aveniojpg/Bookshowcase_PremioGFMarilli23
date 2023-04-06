@@ -9,7 +9,7 @@ html {
     height: 100%;
 }
 body {
-    min-height: 1100px;
+    min-height: 1000px;
 }
 
 .pagebody{
@@ -101,6 +101,8 @@ textarea,input,.username{
     height: 5%;
     width: 80%;
     margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #submitbutton{
@@ -116,6 +118,27 @@ textarea,input,.username{
     background-color: rgb(174, 219, 61);
     transition: 0.3s;
 
+}
+
+#reportbutton:hover{
+    background-color: rgb(219, 61, 61);
+    transition: 0.3s;
+
+}
+
+#reportbutton img{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 2px;
+}
+
+#reportbutton{
+    width: 40px;
+    height: 40px;
+    border: 1px solid black ;
+    background:none;
+    cursor: pointer;
 }
 
 
@@ -231,6 +254,77 @@ select{
     display: none;
 }
 
+.reportcontainer{
+    height: 400px;
+    width: 650px;
+    /* background-color: red; */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 4px;
+
+}
+
+.reportcontainer::backdrop{
+    background-color: rgba(91, 91, 91, 0.5);
+
+}
+
+.reporttitle{
+    width: 100%;
+    /* background-color: blue; */
+    font-size: 25px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+
+}
+
+.reportarea{
+    width: 100%;
+    position: relative;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    border: 1px solid grey;
+
+}
+
+.reportbtncontainer{
+    display: flex;
+    position: relative;
+    top: 50px;
+    /* background-color: green; */
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: space-between;
+}
+
+.reportbtn{
+    height: 40px;
+    border: none;
+    border: 1px solid black;
+    background: none;
+    cursor: pointer;
+    width: 70px;
+}
+.reportwrap{
+    /* background-color: yellow; */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    top: 30px;
+   
+
+}
+
 
 @media (max-width:1400px) {
 
@@ -333,8 +427,6 @@ select{
    
 
     #submitbutton{
-        width: 100%;
-        height: 50px;
     }
 
     .imgsection{

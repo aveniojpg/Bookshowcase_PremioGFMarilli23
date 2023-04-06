@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookselling</title>
-    <link rel="stylesheet" href="/CSS/editprofile.css">
+    <link rel="stylesheet" href="/CSS/profile.css">
     <link rel="stylesheet" href="/CSS/navbar.css">
     <link rel="stylesheet" href="/CSS/footer.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -25,51 +25,35 @@
 
 <div class="pagebody">
 <div class="maincontainer">
-    <div class="top">Modifica profilo</div>
+    <div class="top">Profilo</div>
     <div class="usersection">
-        <input type="file" accept="image/*" name="image" id="pfpfile" onchange="loadFile1(event)" class="pfpchange" style="display:none">
-        <label for="pfpfile" style="cursor: pointer;" class="uploadbtn">
-            <img src="/SRC/pen.png" alt="" class="uploadicon">
-          </label>
+     
+
         <div class="pfpcontainer">
-            
-            <img src="/SRC/pfptesting.jpg" alt="" class="pfp" id="pfp">
-            <script>
-                var loadFile1 = function(event) {
-                    var image1 = document.getElementById('pfp');
-                    image1.src = URL.createObjectURL(event.target.files[0]);
-                };
-                </script>
-                
-                
+            <img src="/SRC/pfptesting.jpg" alt="" class="pfp">
         </div>
         <div class="userinfo">
-            <div class="name">Avenio Castro</div>
-            <input type="text" class="nickname" placeholder="Inserisci il nuovo username">
+            <div class="name">Giacomo Ranieri</div>
+            <div class="nickname">@jacquexxs</div>
         </div>
         </div>
         <div class="infosection">
             <div class="subtitle">Contatti</div>
             <div class="flexfield">
                 <div class="infotype">Email:</div>
-                <input type="text" class="infofield" placeholder="Inserisci una nuova email">
+                <div class="infofield">usermail@gmail.com</div>
             </div>
             <div class="subtitle">Altro</div>
             <div class="flexfield">
-                <div class="infotype">Email:</div>
-                <input type="text" class="infofield" placeholder="Inserisci una nuova email">
+                <div class="infotype">OptField1:</div>
+                <div class="infofield">Lorem Ipsum</div>
             </div><div class="flexfield">
-                <div class="infotype">Email:</div>
-                <input type="text" class="infofield" placeholder="Inserisci una nuova email">
+                <div class="infotype">OptField3:</div>
+                <div class="infofield">Lorem Ipsum</div>
             </div><div class="flexfield">
-                <div class="infotype">Email:</div>
-                <input type="text" class="infofield" placeholder="Inserisci una nuova email">
+                <div class="infotype">OptField4:</div>
+                <div class="infofield">Lorem Ipsum</div>
             </div>
-            <a href="profile.html" class="hrefwrap">
-                <img src="/SRC/close.png    " alt="">
-            </a>
-            
-            <button type="submit" class="submitbtn">Salva modifiche</button>
     </div>
    
     

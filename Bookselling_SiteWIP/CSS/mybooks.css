@@ -20,6 +20,10 @@ a{
     z-index: auto;
 }
 
+body{
+    background-color: rgba(237, 237, 237, 0.175);
+}
+
 .pagebody{
     min-height: 1450px;
    

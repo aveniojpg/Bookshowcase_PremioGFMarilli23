@@ -73,9 +73,13 @@ p{
     align-items: center;
 }
 
+body{
+    background-color: rgba(237, 237, 237, 0.175);
+}
+
 div.login{
     width: 50%;
-    background-color:black;
+    background-color: rgb(75, 75, 75);
     height: 100%;
     line-height: 50px;
     padding-left: 25px;

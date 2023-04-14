@@ -16,6 +16,10 @@ body {
     height: 100%;
 }
 
+body{
+    background-color: rgba(237, 237, 237, 0.175);
+}
+
 
 .maincontainer{
     height: 700px;

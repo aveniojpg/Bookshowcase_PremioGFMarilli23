@@ -9,6 +9,10 @@ a{
     color: black;
 }
 
+body{
+    background-color: rgba(237, 237, 237, 0.175);
+}
+
 .pagetitle{
     position:absolute;
     /* background-color: red; */

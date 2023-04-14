@@ -16,6 +16,10 @@ body {
     height: 100%;
 }
 
+body{
+    background-color: rgba(237, 237, 237, 0.175);
+}
+
 
 .maincontainer{
     /* background-color: red; */
@@ -25,7 +29,7 @@ body {
     top: 160px;
     left: 50%;
     transform: translateX(-50%);
-    border: 2px solid black;
+    border: 2px solid rgb(171, 168, 168)
 }
 
 .top{

@@ -9,6 +9,10 @@ a{
     color: black;
 }
 
+body{
+    background-color: rgba(237, 237, 237, 0.175);
+}
+
 .pagetitle{
     position:absolute;
     /* background-color: red; */
@@ -75,7 +79,7 @@ a{
 }
 
 .filtermenu{
-    border: 2px solid black;
+    border-right: 2px solid black;
     width: 300px;
     height: 100vh;
     position: fixed ;
@@ -86,6 +90,7 @@ a{
     z-index: 4;
     overflow: auto;
     left: -300px;
+    
 }
 
 #filtersectiontitle{
@@ -154,6 +159,7 @@ a{
     height: 300px;
     border-left: 1px solid rgb(203, 194, 194);
     border-right: 1px solid rgb(203, 194, 194);
+    border-bottom: 1px solid rgb(203, 194, 194);
 
 
 
@@ -180,16 +186,16 @@ a{
 
 }
 
-.checkboxline input[type='checkbox']{
-    height: 30px;
-    width: 30px;
-    line-height: 30px;
-}
+
 
 .checkboxline{
     display: flex;
-    align-items: center
+    align-items: center;
+    /* background-color: red;
+    border: 1px solid black; */
+    height: 50px;
 }
+
 
 .checktext{
     padding-left: 10px;
@@ -423,6 +429,9 @@ a{
         height: 700px;
         /* box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);  */
         border: none;
+        background-color: rgba(237, 237, 237, 0.175);
+
+        
     }
 
     .flexcontainer{

@@ -29,7 +29,8 @@ body{
     top: 160px;
     left: 50%;
     transform: translateX(-50%);
-    border: 2px solid rgb(171, 168, 168)
+    border: 2px solid rgb(171, 168, 168);
+    background-color: white;
 }
 
 .top{
@@ -37,7 +38,7 @@ body{
     /* background-color: yellow; */
     font-size: 30px;
     line-height: 90px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(171, 168, 168);
     padding-left: 25px;
     font-weight: 500;
 }
@@ -46,7 +47,7 @@ body{
     height: 35%;
     /* background-color: green; */
     display: flex;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(171, 168, 168);
 }
 
 .pfpcontainer{

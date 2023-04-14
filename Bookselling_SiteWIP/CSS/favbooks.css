@@ -25,6 +25,11 @@ a{
    
 }
 
+body{
+    background-color: rgba(237, 237, 237, 0.175);
+}
+
+
 
 
 /* toggler menu è per dentro le img nei container */
@@ -70,6 +75,7 @@ a{
     background:none;
     /* border: none; */
     border: 1px solid black;
+    background-color: white;
 
 }
 

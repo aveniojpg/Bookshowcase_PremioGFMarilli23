@@ -31,6 +31,7 @@ body{
 
 
 
+
 /* toggler menu è per dentro le img nei container */
 
 
@@ -88,13 +89,14 @@ a{
     height: 30px;
     background:none;
     cursor: pointer;
-    border: 1px solid black
+    border: 1px solid black;
 }
 
 .smallbtn{
     width:30px;
     height: 30px;
     border: 1px solid black;
+    background-color: white;
 
 }
 
@@ -107,6 +109,10 @@ a{
     width: 15px;
     line-height: 30px;
     /* background-color: red; */
+}
+
+.btnflex button{
+    background-color: white;
 }
 
 .binbtn img{

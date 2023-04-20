@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    font-family: 'Alexandria','Sans serif';
+}
+
+a{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+.box{
+    width: 240px;
+    height: 420px;
+    /* background-color: rgb(214, 165, 199); */
+    /* cursor: pointer; */
+    box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    position: static;
+    /* border:3px solid black; */
+}
+
+.centerbox{
+    width: 90%;
+    height: 90%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* .anchor{
+    background-color: red;
+    height: 100%;
+} */
+
+.gridcontainer{
+    top: 150px;
+    width: 95%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    gap: 20px;
+    background-color: rgb(164, 164, 239);
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill,minmax(360px,auto));
+    justify-items:center
+    
+}
+
+.booktitle{
+    /* background-color: rgb(55, 158, 165); */
+    font-size: 20px;
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
+    max-height: 80px;
+    height: fit-content;
+    padding-bottom: 30px;
+}
+
+.imgcontainer{
+    position: relative;
+    background-color: blueviolet;
+    height: 250px;
+}
+
+.bookimg{
+    min-width: 100%;
+    max-height: 100%;
+    object-position: center;
+}
+
+.info{
+    font-weight: 300;
+}
+
+.price{
+    font-size: 22px;
+}

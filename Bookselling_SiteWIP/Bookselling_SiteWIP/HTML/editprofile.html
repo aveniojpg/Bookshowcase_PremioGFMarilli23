@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookselling</title>
+    <link rel="stylesheet" href="/CSS/editprofile.css">
+    <link rel="stylesheet" href="/CSS/navbar.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <!-- font momentaneo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alexandria&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="nav"></div>
+    <script>
+        $(function(){
+          $("#nav").load("navbar.html");
+        });
+        </script>
+
+<div class="pagebody">
+<div class="maincontainer">
+    <div class="top">Modifica profilo</div>
+    <div class="usersection">
+        <input type="file" accept="image/*" name="image" id="pfpfile" onchange="loadFile1(event)" class="pfpchange" style="display:none">
+        <label for="pfpfile" style="cursor: pointer;" class="uploadbtn">
+            <img src="/SRC/pen.png" alt="" class="uploadicon">
+          </label>
+        <div class="pfpcontainer">
+            
+            <img src="/SRC/pfptesting.jpg" alt="" class="pfp" id="pfp">
+            <script>
+                var loadFile1 = function(event) {
+                    var image1 = document.getElementById('pfp');
+                    image1.src = URL.createObjectURL(event.target.files[0]);
+                };
+                </script>
+                
+                
+        </div>
+        <div class="userinfo">
+            <div class="name">Avenio Castro</div>
+            <input type="text" class="nickname" placeholder="Inserisci il nuovo username">
+        </div>
+        </div>
+        <div class="infosection">
+            <div class="subtitle">Contatti</div>
+            <div class="flexfield">
+                <div class="infotype">Email:</div>
+                <input type="text" class="infofield" placeholder="Inserisci una nuova email">
+            </div>
+            <div class="subtitle">Altro</div>
+            <div class="flexfield">
+                <div class="infotype">Email:</div>
+                <input type="text" class="infofield" placeholder="Inserisci una nuova email">
+            </div><div class="flexfield">
+                <div class="infotype">Email:</div>
+                <input type="text" class="infofield" placeholder="Inserisci una nuova email">
+            </div><div class="flexfield">
+                <div class="infotype">Email:</div>
+                <input type="text" class="infofield" placeholder="Inserisci una nuova email">
+            </div>
+            <a href="profile.html" class="hrefwrap">
+                <img src="/SRC/close.png    " alt="">
+            </a>
+            
+            <button type="submit" class="submitbtn">Salva modifiche</button>
+    </div>
+   
+    
+</div>
+
+</div>
+
+</body>
+</html>

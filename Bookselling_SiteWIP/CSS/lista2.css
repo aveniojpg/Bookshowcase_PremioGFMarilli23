@@ -11,6 +11,12 @@ a{
 
 body{
     background-color: rgba(237, 237, 237, 0.175);
+    
+
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .pagetitle{

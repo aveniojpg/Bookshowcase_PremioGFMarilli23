@@ -20,6 +20,11 @@ a{
     z-index: auto;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
+
 .pagebody{
     min-height: 1450px;
    

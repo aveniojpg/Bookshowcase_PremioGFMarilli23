@@ -16,3 +16,14 @@ function closemodal() {
     modal.close();
     })
 }
+
+
+// function toggleheart(){
+//     var btn = document.getElementById('submitbutton');
+//     if (btn.style.color=="red") {
+//         btn.style.color="black"
+//     }
+//     else{
+//         btn.style.color=="red"
+//     }
+// }

@@ -19,6 +19,11 @@ a{
     color: white;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
+
 
 .title{
     width: 50%;

@@ -14,9 +14,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alexandria&display=swap" rel="stylesheet">
   <script src="/JS/imgslider1.js"></script>
   <script src="/JS/popup-book.js"></script>
+  <script src="https://kit.fontawesome.com/3c9e13ec7b.js" crossorigin="anonymous"></script>
 
 </head>
-<body onload="openmodal(),closemodal()">
+<body onload="openmodal(),closemodal(),toggleheart">
 
  
   <div id="nav"></div>
@@ -25,6 +26,9 @@
         $("#nav").load("navbar.html");
       });
       </script>
+
+
+
   <!-- sezione body -->
   <div class="pagebody">
     <div class="maincontainer">
@@ -81,12 +85,43 @@
           <input type="text" placeholder="0,00" class="price" maxlength="5" readonly>
         </div>
         <div class="btncontainer">
-        <button type="submit" id="submitbutton" >Aggiungi tra i preferiti</button>
+
+        <button type="submit" id="submitbutton" class="submitbtn" onclick="toggleheart()" >
+          <div id="txt">Aggiungi ai preferiti</div>
+          <img src="/SRC/heart-regular.svg" class="heart" alt="" id="heart">
+        </button>
+       
+
+        <script>
+          function toggleheart() {
+
+            let displayimage = document.getElementById('heart');
+            var txt = document.getElementById('txt')
+            var btn = document.getElementById('submitbutton')
+
+            if(displayimage.src.match('../SRC/heart-regular.svg') && txt.innerText=='Aggiungi ai preferiti'){
+              // displayimage.src='../SRC/redheart.png'
+              displayimage.src='../SRC/close.png'
+              txt.innerText='Rimuovi dai preferiti'
+            }
+            else{
+              displayimage.src='../SRC/heart-regular.svg'
+              txt.innerText='Aggiungi ai preferiti'
+            }
+
+           
+          
+        }
+        </script>
+
         <button id="reportbutton" class="open-button" onclick="openmodal()">
           <img src="/SRC/report.png" alt="">
         </button>
         </div>
+
       </div>
+
+      
       
     </div>
 

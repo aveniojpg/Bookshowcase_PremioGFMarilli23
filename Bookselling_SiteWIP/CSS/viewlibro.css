@@ -20,6 +20,16 @@ body{
     background-color: rgba(237, 237, 237, 0.175);
 }
 
+.heart{
+    position: relative;
+    left: 6px;
+    top: 2px;
+   background-color: none;
+   width: 15px;
+   height: 15px;
+}
+
+
 
 
 
@@ -81,6 +91,11 @@ textarea{
 
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
+
 textarea,input,.username{
     width: 80%;
 }
@@ -109,17 +124,33 @@ textarea,input,.username{
     justify-content: space-between;
 }
 
-#submitbutton{
+.submitbtn{
     height: 40px;
     width:220px;
     font-size: 15px;
     background: none;
     border: 1px solid black;
     cursor: pointer;
+    color: black;
+    background:transparent;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#submitbutton:hover{
-    background-color: rgb(174, 219, 61);
+.heart{
+    /* background-color: red; */
+    position: relative;
+    top: -0.5px;
+}
+
+
+
+
+
+.submitbutton:hover{
+    /* background-color: rgb(174, 219, 61); */
     transition: 0.3s;
 
 }
@@ -429,9 +460,6 @@ select{
 @media (max-width:1000px){
 
    
-
-    #submitbutton{
-    }
 
     .imgsection{
         justify-content: space-between;

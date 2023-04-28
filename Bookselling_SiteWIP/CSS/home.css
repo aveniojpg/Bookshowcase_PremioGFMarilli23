@@ -13,6 +13,11 @@ a:hover, a:active { text-decoration: none; color:rgb(159, 213, 53) }
 - visited si resetta al colore normale impostato
 */
 
+::-webkit-scrollbar {
+    display: none;
+}
+
+
 
 
 a{

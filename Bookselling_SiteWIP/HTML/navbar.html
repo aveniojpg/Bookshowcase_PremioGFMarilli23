@@ -1,4 +1,8 @@
+<script src="/JS/navbar.js"></script>
 
+
+<body onload="toggleMenu()">
+    
     <!-- SEZIONE UPPERBAR  -->
     <div class="upperbar">
         <div class="title">
@@ -38,11 +42,11 @@
                 <img src="/SRC/arrow-button.png" alt="">
             </div>
            
-            <div class="hovercontainer">
-            <a class="pfphover" href="profile.html">
+            <div class="hovercontainer" onclick="toggleMenu()" id="menudesktop">
+            <div class="pfphover">
                 <img src="/SRC/pfptesting.jpg" alt="">
-            </a>
-            <div class="hovermenu">
+            </div>
+            <div class="hovermenu" id="dropdown">
                 <a  class="line" href="profile.html">
                     <img src="/SRC/user.png" alt="">
                     <div class="hovertext">Profilo</div>
@@ -70,5 +74,6 @@
      <div class="mobilesection">
         <input type="search" placeholder="Cerca un libro" class="searchbar">
      </div>
+    </body>
 
    

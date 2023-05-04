@@ -84,10 +84,6 @@ body{
     border: 1px solid black;
 }
 
-.uploadbtn:hover{
-    background-color: rgb(143, 250, 143);
-    transition: 0.3s;
-}
 
 .uploadicon{
     height: 15px;
@@ -102,6 +98,7 @@ body{
 .pfp{
     max-width: 100%;
     min-height: 100%;
+    object-position: center;
 
  
 }
@@ -244,6 +241,10 @@ input:focus{
 
 
 @media(max-width:1050px) {
+
+    .pagebody{
+        min-height: 800px;
+    }
 
     .uploadbtn{
         top: 250px;

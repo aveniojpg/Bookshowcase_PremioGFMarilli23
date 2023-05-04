@@ -41,13 +41,13 @@
     font-size: 14px;
     cursor: pointer;
     border-radius: 0.2rem;
-    margin-left: 30px;
+    /* margin-left: 30px; */
 }
 
-.publish:hover{
+/* .publish:hover{
     background-color: rgb(174, 219, 61);
     transition: 0.3s;
-}
+} */
 
 .hovermenu{
     height: 220px;
@@ -87,24 +87,24 @@
 }
 
 .hovercontainer{
-    width: 120px;
     /* background-color: blue; */
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 30px;
+    
 }
 
 .bottomarrow img{
     width: 9px;
     height: 5px;
-    position: relative;
-    left:78px;
     margin-bottom: 3px;
+    margin-left: 5px;
 }
 
 .exit{
-    color: rgb(205, 69, 69);
+    color: rgb(255, 51, 51);
 }
 
 .pfphover img{

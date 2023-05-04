@@ -255,15 +255,17 @@ a{
 
 
 .imgcontainer{
-    background-color: rgb(169, 222, 190);
     width: 240px;
     position: relative;
+    /* background-color: red; */
     /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
 }
 
 .imgcontainer img{
     min-width: 100%;
+  
     min-height: 100%;
+    object-fit: cover;
     
 }
 

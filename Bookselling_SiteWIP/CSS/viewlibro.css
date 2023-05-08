@@ -76,8 +76,13 @@ body{
     font-weight: 400;
     font-size: 22px;
     margin-bottom: 10px;
-    height: 5%;
+    height: 30px;
+    white-space: nowrap;
+    overflow-x: auto;
+    width: 80%;
+    /* background-color: red; */
 }
+
 
 
 textarea{
@@ -180,9 +185,9 @@ textarea,input,.username{
 .sellermail{
     width: 70%;
     text-align: right;    
-    overflow: scroll;
     background:none;
-        font-style: italic;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 .price{
     width: 20%;
@@ -190,7 +195,6 @@ textarea,input,.username{
 }
 .sellermail,.price,.isbn{
     border:none;
-    background: none;
     font-size: 15px;
     font-weight: 400;
 }
@@ -379,6 +383,8 @@ select{
         height: 200px;    
         line-height: 200px;
         max-height: 200px;
+        white-space: nowrap;
+        overflow-x: auto;
      }
 
      span

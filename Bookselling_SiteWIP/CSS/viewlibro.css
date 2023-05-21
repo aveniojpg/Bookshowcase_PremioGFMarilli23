@@ -29,7 +29,9 @@ body{
    height: 15px;
 }
 
-
+.flexbodyitem1{
+    width: 100%;
+}
 
 
 
@@ -58,6 +60,12 @@ body{
     justify-content: space-around;
     /* background-color: rgb(192, 192, 213); */
 }
+
+.bookdesc{
+    height: 300px;
+    width: 350px;
+}
+
 
 .infosection{
     height: 100%;

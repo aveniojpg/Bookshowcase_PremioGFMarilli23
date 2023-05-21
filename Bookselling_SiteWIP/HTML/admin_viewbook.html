@@ -5,9 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="/CSS/footer.css">
-  <link rel="stylesheet" href="/CSS/navbar.css">
-  <link rel="stylesheet" href="/CSS/viewlibro.css">
+ 
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@500&display=swap" rel="stylesheet">
@@ -15,17 +13,23 @@
   <script src="/JS/imgslider1.js"></script>
   <script src="/JS/popup-book.js"></script>
   <script src="https://kit.fontawesome.com/3c9e13ec7b.js" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="/CSS/admin_table.css">
+  <link rel="stylesheet" href="/CSS/viewlibro.css">
+
 
 </head>
-<body onload="openmodal(),closemodal(),toggleheart">
+<body onload="openmodal(),closemodal()">
+  <a href="admin_home.html" class="adminback">Indietro</a>
 
- 
+
+<!--  
   <div id="nav"></div>
   <script>
       $(function(){
         $("#nav").load("navbar.html");
       });
-      </script>
+      </script> -->
 
 
 
@@ -48,7 +52,7 @@
       <div class="infosection">
       <div class="booktitle">booktitle</div>
         <div class="usernamelabel">di
-          <a href="viewprofile.html " class="username">user</a>
+          <div href="viewprofile.html " class="username">user</div>
         </div>
         <textarea name="" id="" cols="30" rows="10" maxlength="400" placeholder="Descrizione libro utente" readonly class="bookdesc"></textarea>
         <div class="optionscontainer">
@@ -77,59 +81,7 @@
           <div class="label">Prezzo</div>
         <div class="userinput">price</div>
         </div>
-        <div class="btncontainer">
-
-        <button type="submit" id="submitbutton" class="submitbtn" onclick="toggleheart()" >
-          <div id="txt">Aggiungi ai preferiti</div>
-          <img src="/SRC/heart-regular.svg" class="heart" alt="" id="heart">
-        </button>
-       
-
-        <script>
-          function toggleheart() {
-
-            let displayimage = document.getElementById('heart');
-            var txt = document.getElementById('txt')
-            var btn = document.getElementById('submitbutton')
-
-            if(displayimage.src.match('../SRC/heart-regular.svg') && txt.innerText=='Aggiungi ai preferiti'){
-              // displayimage.src='../SRC/redheart.png'
-              displayimage.src='../SRC/close.png'
-              txt.innerText='Rimuovi dai preferiti'
-            }
-            else{
-              displayimage.src='../SRC/heart-regular.svg'
-              txt.innerText='Aggiungi ai preferiti'
-            }
-
-           
-          
-        }
-        </script>
-
-        <button id="reportbutton" class="open-button" onclick="openmodal()">
-          <img src="/SRC/report.png" alt="">
-        </button>
-        </div>
-
-      </div>
-
       
-      
-    </div>
-
-    <dialog class="reportcontainer" id="modal">
-      <div class="reportwrap">
-      <div class="reporttitle">Segnalazione</div>
-      <form action="" method="dialog">
-      <textarea name="" id="" cols="30" rows="10" placeholder="Inserisci il motivo della segnalazione..." class="reportarea"></textarea>
-      <div class="reportbtncontainer">
-      <button class="reportbtn close-button" onchange="closemodal()">Indietro</button>
-      <button type="submit" class="reportbtn">Invia</button>
-    </form>
-
-      </dialog>
-
     </div>
     </div>
   
